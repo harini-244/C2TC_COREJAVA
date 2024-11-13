@@ -1,4 +1,4 @@
-package packagefour.singleinheritance;
+package packagefive.singleinheritance;
 
 public class Student extends Citizen{
 	private int rollNo;
@@ -25,11 +25,14 @@ public class Student extends Citizen{
 	public String getCollegeName() {
 		return collegeName;
 	}
+
 	public void setCollegeName(String collegeName) {
 		this.collegeName = collegeName;
 	}
 
+	@Override
 	public String toString() {
-		return "Student [rollNo=" + rollNo + ", collegeName=" + collegeName + ", Name=" + getName() + ", AadharNo=" + getAadharNo() + ", Address=" + getAddress() + ", Phno=" + getPhno() + "]";
+		return "Student [rollNo=" + rollNo + ", collegeName=" + collegeName + ", Name=" + getName()+ ", AadharNo=" + getAadharNo() + ", Address=" + getAddress() + ", Phno=" + getPhno()+ "]";
 	}
+
 }
